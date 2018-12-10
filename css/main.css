@@ -225,6 +225,10 @@ footer {
     margin: 1.5rem;
   }
 
+  .product-card:nth-child(3) {
+    display: none;
+  }
+
   .product-card:last-child {
     display: none;
   }
