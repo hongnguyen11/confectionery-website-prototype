@@ -31,6 +31,8 @@ body {
 h1 {
   font-size: 1.5rem;
   width: 40%;
+  margin-left: 1em;
+  font-family: 'Noto Serif TC', serif;
 }
 
 header {
@@ -71,20 +73,27 @@ nav a:hover {
 }
 
 .banner-content {
-  max-width: 40em;
+  max-width: 70em;
   text-align: center;
   line-height: 1.3;
-  margin: 0;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-bottom: 2em;
 }
 
 .banner-content h2 {
-  font-size: 1.25rem;
+  font-size: 2rem;
   text-align: center;
+  margin-bottom: 0;
+}
+
+.banner-content p {
+  margin-top: .5em;
+  font-size: 1.5rem;
 }
 
 .works {
   background-color: #f2f2f2;
-  margin-top: 2rem;
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
@@ -95,6 +104,11 @@ nav a:hover {
   text-align: center;
   padding-top: 1rem;
   font-size: 1.75rem;
+  margin: 0;
+}
+
+.img-card {
+  width: 180px;
 }
 
 .button {
@@ -103,6 +117,7 @@ nav a:hover {
   background-color: black;
   border-radius: 5px;
   padding: .5em .75em;
+  font-size: 1.25rem;
 }
 
 .button:hover {
@@ -142,6 +157,20 @@ nav a:hover {
   background-color: #e2e2e2;
 }
 
+.button-2 {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: .5em .75em;
+}
+
+.button-2:hover {
+  color: black;
+  background-color: white;
+  border: 3px solid #000;
+}
+
 footer {
   background-color: #e2e2e2;
   text-align: center;
@@ -161,6 +190,10 @@ footer {
 
   .product-img {
     width: 50%;
+  }
+
+  .product-card:last-child {
+    display: none;
   }
 
 }
@@ -187,13 +220,13 @@ footer {
     margin: 1rem;
   }
 
-  .product-cards {
-
-  }
-
   .product-card {
     display: inline-block;
     margin: 1.5rem;
+  }
+
+  .product-card:last-child {
+    display: none;
   }
 
   .product-img {
@@ -252,7 +285,15 @@ footer {
   }
 
   .product-cards {
-    display: flex;
+    display: inline-block;
+  }
+
+  .product-card:last-child {
+    display: none;
+  }
+
+  .product-card:nth-child(3) {
+    display: inline-block;
   }
 
 }
@@ -273,6 +314,14 @@ footer {
   }
 
   .product-cards {
+    display: inline-block;
+  }
+
+  .product-card:last-child {
+    display: inline-block;
+  }
+
+  .product-card:nth-child(3) {
     display: inline-block;
   }
 
